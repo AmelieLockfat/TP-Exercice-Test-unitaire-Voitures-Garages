@@ -32,6 +32,8 @@ public class Stationnement {
 		return fin;
 	}
 
+	public void setFin(){ fin = new Date();
+	}
 	public void terminer() {
                 // On enregistre
 		fin = new Date(); // Date du jour
