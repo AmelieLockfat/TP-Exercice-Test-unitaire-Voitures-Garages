@@ -104,13 +104,12 @@ public Set<Garage> garagesVisites(){
 	 */
 	public void imprimeStationnements(PrintStream out) {
 		for (Garage g : garagesVisites()){
-			String nom = g.getName();
-			out.println(nom);
+			out.println(g);
 			for (Stationnement s : myStationnements){
-				if (nom.equals(s.getGarage())){
-				out.println(s.toString());
-					}
+				if (g == s.getGarage()){
+					out.println(s);
+				}
+			}
 		}
-	}
 	}
 }
